@@ -23,6 +23,7 @@ const character = {
   ],
 };
 
+// eslint-disable-next-line no-undef
 test('The function should return an array of objects with fields (id, name, description, icon), if there is no description, the default value "Описание недоступно" is set', () => {
   const expected = [
     {
@@ -38,5 +39,6 @@ test('The function should return an array of objects with fields (id, name, desc
       description: 'Описание недоступно',
     },
   ];
+  // eslint-disable-next-line no-undef
   expect(getAvailableAttackOptions(character)).toEqual(expected);
 });
